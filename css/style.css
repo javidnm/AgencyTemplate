@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+.firstPage{
+    background-image: url(/img/header-bg.jpg);
+    height: 100vh;
+    background-size: cover;
+}
+/*NAVBAR*/
+.navbar{
+    width: 100%;
+    height: 60px;
+    background-color: #212529;
+    position: fixed;
+    padding: 15px;
+}
+.navbar>.menu>.leftSide{
+float: left;
+}
+.navbar>.menu>.leftSide>a{
+    color: #fed136;
+    font-family: 'Kaushan Script';
+    font-size: 1.25rem;
+    padding-left: 140px;
+}
+.rightSide{
+    float: right;
+}
+.rightSide>ul{
+    margin-right: 140px;
+    line-height: 0;
+}
+.rightSide li{
+    display: inline-block;
+    margin-left: 30px;
+}
+.rightSide li>a:hover{
+    color: #fed136;
+}
+.rightSide a{
+    color: white;
+    font-family: "Montserrat"
+}
+/*CENTER TEXTS*/
+.centerTexts .welcome{
+    top: 50%;
+    left: 50%;
+    font-size: 40px;
+    font-style: italic;
+    line-height: 40px;
+    margin-bottom: 25px;
+    font-family: 'Droid Serif';
+    color: white;
+    padding-top: 300px;
+    padding-left: 500px;
+}
+.centerTexts .meet{
+    font-size: 75px;
+    font-weight: 700;
+    line-height: 75px;
+    margin-bottom: 50px;
+    font-family: "Montserrat";
+    color: white;
+    padding-left: 300px;    
+}
+.centerTexts .btn{
+    background-color: #fed136;
+    border-color: #fed136;
+    font-size: 18px;
+    padding: 20px 40px;
+    font-family: "Montserrat";
+    font-weight: 700;
+    border-radius: 7px;
+    display: inline-block;
+    margin-left: 600px;
+}
+.centerTexts .btn>a{
+    color: white;
+}
+/*SERVICES*/
+.secondPage{
+    height: 70%;
+}
+.servicesText{
+    text-align: center;
+}
+.servicesText>h2{
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-family: "Montserrat"
+}
