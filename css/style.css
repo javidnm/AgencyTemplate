@@ -1,6 +1,9 @@
 *{
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin: 0;
     padding: 0;
@@ -13,8 +16,9 @@ li{
 }
 .firstPage{
     background-image: url(/img/header-bg.jpg);
-    height: 100vh;
+    height: 760px;
     background-size: cover;
+    position: relative;
 }
 /*NAVBAR*/
 .navbar{
@@ -23,6 +27,7 @@ li{
     background-color: #212529;
     position: fixed;
     padding: 15px;
+    z-index: 2;
 }
 .navbar>.menu>.leftSide{
 float: left;
@@ -52,6 +57,13 @@ float: left;
     font-family: "Montserrat"
 }
 /*CENTER TEXTS*/
+.centerTexts{
+    position: absolute;
+    top: 40%;
+    left: 23%;
+    text-align: center;
+}
+
 .centerTexts .welcome{
     top: 50%;
     left: 50%;
@@ -61,8 +73,6 @@ float: left;
     margin-bottom: 25px;
     font-family: 'Droid Serif';
     color: white;
-    padding-top: 300px;
-    padding-left: 500px;
 }
 .centerTexts .meet{
     font-size: 75px;
@@ -70,34 +80,256 @@ float: left;
     line-height: 75px;
     margin-bottom: 50px;
     font-family: "Montserrat";
-    color: white;
-    padding-left: 300px;    
+    color: white; 
 }
 .centerTexts .btn{
     background-color: #fed136;
-    border-color: #fed136;
     font-size: 18px;
     padding: 20px 40px;
     font-family: "Montserrat";
     font-weight: 700;
     border-radius: 7px;
     display: inline-block;
-    margin-left: 600px;
+    position: absolute;
+    left: 35%;
 }
 .centerTexts .btn>a{
     color: white;
 }
 /*SERVICES*/
 .secondPage{
-    height: 70%;
+    height: 630px;
 }
 .servicesText{
     text-align: center;
+    padding-top: 90px;
 }
 .servicesText>h2{
     font-size: 40px;
     margin-top: 0;
     margin-bottom: 15px;
-    font-weight: 700;
+    font-weight: bold;
     font-family: "Montserrat"
+}
+.servicesText>h3{
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 75px;
+    text-transform: none;
+    font-family: 'Droid Serif'
+}
+.serviceIcon{
+    text-align: center;
+}
+.serviceIcon .icon{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: 1px solid #fed136;
+    position: absolute;
+    background-color: #fed136;
+}
+.serviceIcon .icon i{
+    height: 2em;
+    line-height: 2em;
+    vertical-align: middle;
+    width: 2.5em;
+    color: white;
+    font-size: 4rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+.e-commerce{
+    float: left;
+    margin-left: 200px;
+}
+.webSecurity{
+    float: right;
+    margin-right: 200px;
+}
+.e-commerce,.responsiveDesign,.webSecurity{
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    position: relative;
+}
+.serviceIcon .iconText{
+    right: 40px;
+    position: absolute;
+    top: 70%;
+}
+.serviceIcon h4{
+    font-family: "Montserrat";
+    font-size: 1.5rem;
+    
+    font-weight: bold;
+}
+.serviceIcon p{
+    color: #6c757d;
+   
+}
+
+/*PORTFOLIO*/
+.thirdPage{
+    position: relative;
+}
+.portfolio{
+    background-color:  #f8f9fa;
+    text-align: center;
+}
+.porfolioText{
+    text-align: center;
+    padding:100px 100px 0 100px;
+
+}
+.card{
+    width: 363px;
+    height: 250px;
+    display: inline-block;
+    padding-top: 30px;
+}
+.pseudoIcon {
+    position: relative;
+    transition: 0.4s;
+}
+.pseudoIcon img{
+    width: 363px;
+    height: 250px;
+}
+.card .pseudoIcon i {
+    display: none;
+}
+
+.overlay {
+    height: 250px;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fed136;
+    transition: 0.4s;
+}
+
+.pseudoIcon:hover .overlay {
+    opacity: 0.9;
+}
+
+.pseudoIcon:hover i {
+    display: block;
+    cursor: pointer;
+    color: white;
+    font-size: 40px;
+    line-height: 33px;
+    left: 43%;
+    top: 43%;
+    position: absolute;
+}
+.cardText{
+    background-color: white;
+    text-align: center; 
+    width: 363px;
+}
+
+/*AMAZING TEAM*/
+.fourthPage{
+    position: relative;
+}
+.ourAmazingTeam{
+    background-color:  #f8f9fa;
+    text-align: center;
+}
+.amazingTeamText{
+    text-align: center;
+    padding:100px 100px 0 100px;
+}
+.person {
+    display: inline-block;
+    padding: 0 70px;
+}
+.person>img{
+    width: 225px;
+    height: 225px;
+    border: 7px solid rgba(0,0,0,.1);
+    border-radius: 50%;
+}
+.person h4{
+    font-family: 'Montserrat';
+    font-size: 1.25rem;
+}
+.person p,.footerText p{
+    color: #6c757d;
+    line-height: 1.75;
+}
+.personInfo .socialMedia a, .container .socialMedia a{
+    font-size: 20px;
+    line-height: 50px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    transition: all .3s;
+    color: #fff;
+    border-radius: 100%;
+    background-color: #212529;
+    float: left;
+    margin: 0px 10px;
+}
+.personInfo .socialMedia a:hover{
+background-color: #fed136;
+}
+.socialMedia{
+    padding-left: 10px;
+}
+.footerText p{
+    padding: 30px 0 150px;
+}
+/*RECLAM*/
+.allReclams{
+    padding: 30px;
+    text-align: center;
+}
+.allReclams img{ 
+    width: 200px;
+    height: 50px;
+}
+.allReclams a{
+    padding: 0 40px;
+}
+/*FOOTER*/
+.footer{
+    background-color:#f8f9fa ;
+    padding-top: 30px;
+    height: 183px;
+}
+.container{
+    text-align: center;
+    position: relative;
+    padding-top: 55px;
+}
+.text{
+    float: left;
+}
+.container .text,.container .socialMedia,.container .policy{
+    display: inline-block;
+    position: absolute;
+}
+.container .text{
+    left: 10%;
+}
+.container .socialMedia{
+    left: 43%;
+}
+.container .policy{
+    right: 10%;
+}
+.container .policy a{
+    color: #fed136;
+}
+.footer .container .socialMedia a:hover{
+    background-color: #fed136;
 }
