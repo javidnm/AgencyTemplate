@@ -1,6 +1,9 @@
 *{
     box-sizing: border-box;
 }
+*::selection{
+    color: #fed136;
+}
 html{
     scroll-behavior: smooth;
 }
@@ -300,6 +303,62 @@ background-color: #fed136;
 .allReclams a{
     padding: 0 40px;
 }
+/*CONTACT*/
+.eigthPage{
+    background-color: #212529;
+    background-image: url(/img/map-image.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 760px;
+}
+.eigthPage{
+    position: relative;
+}
+.contact .leftSideInput{
+    display: inline-block;    
+    position: absolute;
+    left: 11%;
+}
+.leftSideInput input{
+    padding: 20px;
+    width: 500px;
+    height: 60px;
+    border-radius: 10px;
+}
+.contact .rightSideInput{
+    display: inline-block;
+    position: absolute;
+    right: 14%;
+}
+.contact .rightSideInput textarea{
+    height: 240px;
+    resize: none;
+    width: 520px;
+    border-radius: 7px;
+    padding: 20px;
+}
+#contactForm>.formGroup{
+    padding-bottom: 30px;
+}
+.contactText{
+    text-align: center;
+    padding:100px 100px 0 100px;
+}
+.sendButton{
+    background-color: #fed136;
+    font-size: 18px;
+    padding: 20px 40px;
+    font-family: "Montserrat";
+    font-weight: 700;
+    border-radius: 7px;
+    display: inline-block;
+    position: absolute;
+    top: 70%;
+    left: 40%;
+}
+.sendButton a{
+    color: white;
+}
 /*FOOTER*/
 .footer{
     background-color:#f8f9fa ;
@@ -313,6 +372,9 @@ background-color: #fed136;
 }
 .text{
     float: left;
+}
+.text p{
+    font-family: 'Montserrat';
 }
 .container .text,.container .socialMedia,.container .policy{
     display: inline-block;
